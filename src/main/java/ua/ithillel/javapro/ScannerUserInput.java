@@ -41,6 +41,3 @@ public class ScannerUserInput {
         this.userStringInput = userStringInput;
     }
 }
-
-
-
