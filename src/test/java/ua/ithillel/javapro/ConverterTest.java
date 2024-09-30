@@ -9,7 +9,7 @@ class ConverterTest {
     private Converter converter;
 
     @BeforeEach
-    void setUp(){
+    void setUp() {
         converter = new Converter();
         converter.setMiles(10);
         converter.setKilometers(10);

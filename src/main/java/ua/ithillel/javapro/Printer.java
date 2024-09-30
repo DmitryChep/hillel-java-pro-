@@ -2,7 +2,7 @@ package ua.ithillel.javapro;
 
 public class Printer {
 
-    public static void printTitle(){
+    public static void printTitle() {
         System.out.println("Metric Units Conversion Calculator\nChoose metric unit: \"Mile, kilometer\"");
     }
 

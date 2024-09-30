@@ -21,11 +21,11 @@ public class Converter {
         this.miles = miles;
     }
 
-    public double convertMilesToKilometers(double kilometers){
+    public double convertMilesToKilometers(double kilometers) {
         return  kilometers * MILE;
     }
 
-    public double convertKilometersToMiles(double miles ){
+    public double convertKilometersToMiles(double miles ) {
         return  miles / MILE;
     }
 }

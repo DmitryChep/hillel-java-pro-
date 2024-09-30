@@ -1,0 +1,19 @@
+name: Hillel Git JavaPro
+on:
+  - push
+jobs:
+  test:
+    name: Unit tests
+    runs-on: macOS-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          java-version: '22'
+          distribution: 'temurin'
+      - name: Run the Maven verify phase
+        run: mvn --batch-mode test
+
+
+
+
