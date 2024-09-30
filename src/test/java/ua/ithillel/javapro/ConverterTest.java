@@ -25,3 +25,4 @@ class ConverterTest {
         assertEquals( 6.2137119223733395,  converter.convertKilometersToMiles(converter.getKilometers()));
     }
 }
+
