@@ -1,6 +1,7 @@
 package ua.ithillel.javapro;
 
 public class Converter {
+    private final double CONVERT_KEY = 1.8;
     private double Celsius;
     private double Fahrenheit;
 
@@ -20,6 +21,10 @@ public class Converter {
         this.Fahrenheit = fahrenheit;
     }
 
+    public double convertFahrenheitToCelsius(double Fahrenheit) {
+        return  (Fahrenheit - 32) / CONVERT_KEY;
+    }
 }
+
 
 
