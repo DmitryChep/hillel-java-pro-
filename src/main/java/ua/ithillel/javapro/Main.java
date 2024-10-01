@@ -24,13 +24,10 @@ public class Main {
 
             converter.setKilometers(scannerUserInput.getUserDoubleInput());
             double resultConversion = converter.convertKilometersToMiles(converter.getKilometers());
-
+          
             Printer.printResultsConversion("resultMiles", resultConversion);
         } else {
             System.out.println("Error: Incorrect metric unit entry");
         }
     }
 }
-
-
-
