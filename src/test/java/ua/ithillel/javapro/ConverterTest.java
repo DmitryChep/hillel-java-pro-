@@ -11,17 +11,17 @@ class ConverterTest {
     @BeforeEach
     void setUp(){
         converter = new Converter();
-        converter.setMiles(10);
-        converter.setKilometers(10);
+        converter.setFahrenheit(50);
+        converter.setCelsius(10);
     }
 
     @Test
     void convertMilesToKilometers() {
-        assertEquals( 16.09344,  converter.convertMilesToKilometers(converter.getMiles()));
+        assertEquals(10 , converter.convertFahrenheitToCelsius(converter.getFahrenheit()));
     }
 
     @Test
     void convertKilometersToMiles() {
-        assertEquals( 6.2137119223733395,  converter.convertKilometersToMiles(converter.getKilometers()));
+        assertEquals( 50,  converter.convertCelsiusToFahrenheit(converter.getCelsius()));
     }
 }

@@ -1,7 +1,6 @@
 name: Hillel Git JavaPro
 on:
   - push
-
 jobs:
   test:
     name: Unit tests
