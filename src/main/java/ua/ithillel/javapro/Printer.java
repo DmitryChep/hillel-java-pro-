@@ -32,6 +32,10 @@ public class Printer {
                 throw new IllegalStateException("Unexpected value: " + results);
         }
     }
+
+    public static void printWishing(){
+        System.out.println("Goodbye and keep your feet warm!");
+    }
 }
 
 
