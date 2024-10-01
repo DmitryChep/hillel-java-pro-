@@ -1,33 +1,25 @@
 package ua.ithillel.javapro;
 
 public class Converter {
-    private final double MILE = 1.609344;
-    private double kilometers;
-    private double miles;
+    private double Celsius;
+    private double Fahrenheit;
 
-    public double getKilometers() {
-        return kilometers;
+    public double getCelsius() {
+        return Celsius;
     }
 
-    public void setKilometers(double kilometers) {
-        this.kilometers = kilometers;
+    public void setCelsius(double celsius) {
+        this.Celsius = celsius;
     }
 
-    public double getMiles() {
-        return miles;
+    public double getFahrenheit() {
+        return Fahrenheit;
     }
 
-    public void setMiles(double miles) {
-        this.miles = miles;
+    public void setFahrenheit(double fahrenheit) {
+        this.Fahrenheit = fahrenheit;
     }
 
-    public double convertMilesToKilometers(double kilometers) {
-        return  kilometers * MILE;
-    }
-
-    public double convertKilometersToMiles(double miles ) {
-        return  miles / MILE;
-    }
 }
 
 

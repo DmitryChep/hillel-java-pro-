@@ -3,30 +3,21 @@ package ua.ithillel.javapro;
 public class Printer {
 
     public static void printTitle() {
-        System.out.println("Metric Units Conversion Calculator\nChoose metric unit: \"Mile, kilometer\"");
+        System.out.println("Metric Units Conversion Calculator\nChoose metric unit: \"Fahrenheit, Celsius\"");
     }
 
     public static void printRequestForUser(int step) {
-        switch (step) {
-            case 1:
-                System.out.print("From: ");
-                break;
-            case 2:
-                System.out.print("Enter the number of miles: ");
-                break;
-            case 3:
-                System.out.print("Enter the number of kilometers: ");
-                break;
-        }
+        System.out.print("From: ");
+
     }
 
     public static void printResultsConversion(String results, double resultUnits) {
         switch (results) {
-            case "resultMiles":
-                System.out.print( "Result: " + resultUnits+ " mi");
+            case "resultFahrenheit":
+                System.out.print( "Result: " + resultUnits+ " °F");
                 break;
-            case "resultKilometers" :
-                System.out.print( "Result: " + resultUnits+ " km");
+            case "resultCelsius" :
+                System.out.print( "Result: " + resultUnits+ " °C");
                 break;
         }
     }
