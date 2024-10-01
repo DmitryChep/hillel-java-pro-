@@ -23,10 +23,10 @@ public class Printer {
     public static void printResultsConversion(String results, double resultUnits) {
         switch (results) {
             case "resultFahrenheit":
-                System.out.printf("Result: %.1f °F" , resultUnits);
+                System.out.printf("Result: %.1f°F" , resultUnits);
                 break;
             case "resultCelsius" :
-                System.out.printf("Result: %.1f °C" , resultUnits);
+                System.out.printf("Result: %.1f°C" , resultUnits);
                 break;
             default:
                 throw new IllegalStateException("Unexpected value: " + results);

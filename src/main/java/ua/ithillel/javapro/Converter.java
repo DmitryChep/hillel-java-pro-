@@ -24,6 +24,10 @@ public class Converter {
     public double convertFahrenheitToCelsius(double Fahrenheit) {
         return  (Fahrenheit - 32) / CONVERT_KEY;
     }
+
+    public double convertCelsiusToFahrenheit(double Celsius) {
+        return  Celsius * CONVERT_KEY + 32;
+    }
 }
 
 

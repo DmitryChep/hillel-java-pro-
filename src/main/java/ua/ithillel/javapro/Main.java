@@ -15,9 +15,17 @@ public class Main {
             scannerUserInput.setUserDoubleInput(scannerUserInput.getScannerDouble().nextInt());
 
             converter.setFahrenheit(scannerUserInput.getUserDoubleInput());
-            double resultConversion = converter.convertFahrenheitToCelsius(converter.getFahrenheit());
+            double resultConversionFahrenheitToCelsius = converter.convertFahrenheitToCelsius(converter.getFahrenheit());
 
-            Printer.printResultsConversion("resultCelsius", resultConversion);
+            Printer.printResultsConversion("resultCelsius", resultConversionFahrenheitToCelsius);
+        } else if (scannerUserInput.getUserStringInput().trim().equalsIgnoreCase("Celsius")) {
+            Printer.printRequestForUser(3);
+            scannerUserInput.setUserDoubleInput(scannerUserInput.getScannerDouble().nextInt());
+
+            converter.setCelsius(scannerUserInput.getUserDoubleInput());
+            double resultConversionCelsiusToFahrenheit = converter.convertCelsiusToFahrenheit(converter.getCelsius());
+
+            Printer.printResultsConversion("resultFahrenheit", resultConversionCelsiusToFahrenheit);
         } else {
             System.out.println("Error: Incorrect temperature scale entry");
         }
