@@ -1,24 +1,22 @@
 package ua.ithillel.javapro;
 
 public class Main {
-    private static final double CONV_K = 2.20462;
-
     public static void main(String[] args) {
-        System.out.println("Converter App.");
-
-        double kgs = 5;
-        double pnds  = 15;
-        double pounds = convKgsToPounds(kgs);
-        double kilos  = convPoundsToKgs(pnds);
-        System.out.println("Result is " + pounds + " pounds and " + kilos + "kgs.");
+        Customer customer = getCustomer(getData());
+        String output = "Customer: " + customer.getName() +
+                ", phone " + customer.getPhone();
+        getOutput(output);
     }
 
-    private static double convKgsToPounds(double kgs){
-        return  kgs * CONV_K;
+    public static String[] getData() {
+        return new String[]{"Tom", "+491724235530"};
     }
 
-    private static double convPoundsToKgs(double pnds){
-        return  pnds / CONV_K;
+    public static Customer getCustomer(String[] data) {
+        return new Customer(data[0], data[1]);
     }
 
+    public static void getOutput(String output) {
+        System.out.print(output);
+    }
 }
