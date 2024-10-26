@@ -4,15 +4,14 @@ public class Main {
     public static void main(String[] args) {
 
         DataProvider provider = new DataProvider();
-        DataHandler<String> dataHandlerString = new DataHandler<>();
-        DataHandler<Double> dataHandlerDouble = new DataHandler<>();
+        DataHandler dataHandler = new DataHandler();
 
         // Обробка масиву даних найменувань товарів
-        String namesOutput = dataHandlerString.handleData(provider.getProductNames());
+        String namesOutput = dataHandler.handleData(provider.getProductNames());
         getOutput("Products: " + namesOutput);
 
         // Обробка масиву даних про суми продажів
-        String salesOutput = dataHandlerDouble.handleData(provider.getSalesAmounts());
+        String salesOutput = dataHandler.handleData(provider.getSalesAmounts());
         getOutput("Sales, EUR: " + salesOutput);
     }
 
