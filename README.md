@@ -2,5 +2,4 @@
 ***
 ### Homework 10.1 "File Handler"
 ***
-__Implementation of functionality 
-for writing(creating) and reading files using IO API.__
+__Implement functionality to write (create) and read files using IO API. For char and byte types IO streams.__
