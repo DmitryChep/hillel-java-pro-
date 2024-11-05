@@ -2,18 +2,18 @@ package ua.ithillel.javapro;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
-public class DataHandler {
+import static java.lang.Thread.currentThread;
 
+public class DataHandler {
     String[] fruits = new DataRepository().getData();
 
     public void getOutput() {
         // критичний блок коду
-        synch (this) {
+        synchronized (this) {
             StringBuilder sb = new StringBuilder();
-            count = new AtomicInteger(1);
+            AtomicInteger count = new AtomicInteger(1);
             for (String fruit : fruits) {
-                sb.append(String.format("(%d) %s ",
-                        count, fruit));
+                sb.append(String.format("(%d) %s ", count.getAndIncrement(), fruit));
             }
             System.out.println(currentThread().getName() + ": " + sb);
         }

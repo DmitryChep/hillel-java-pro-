@@ -1,16 +1,15 @@
 package ua.ithillel.javapro;
 
-class MyThread extends Thread {
+public class MyThread extends Thread {
 
-    dataHandler;
+    private DataHandler dataHandler;
 
     public MyThread(String name, DataHandler dataHandler) {
         super(name);
         this.dataHandler = dataHandler;
     }
 
-    public  run() {
+    public void run() {
         dataHandler.getOutput();
     }
 }
-
