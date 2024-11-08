@@ -1,5 +1,5 @@
-### Hillel Java Pro project
+## Hillel Java Pro project
 ***
-### 
+### Homework 13.1. "Locker App"
 ***
-______
+___The functionality of modifying numbers using a lock object.___
