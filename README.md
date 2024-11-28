@@ -1,5 +1,5 @@
 ### Hillel Java Pro project
 ***
-### 
+### Homework 18.1 "Manipulating user objects using the Optional class"
 ***
-______
+___Implemented the functionality of manipulating user objects using the Optional class.___
